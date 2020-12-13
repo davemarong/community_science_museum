@@ -14,6 +14,16 @@ h1{
 h2{
     color: #04C4D9;
 }
+/*--------HR----------*/
+.redHR{
+    height: 5px;
+    width: 150px;
+    background-color: #F28080;
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+    border-radius: 100px;
+}
 /*--------Buttons----------*/
 .button{
     border-radius: 50px;
@@ -136,6 +146,7 @@ nav ul li:active{
 
 /*--------Category----------*/
 .category{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -144,8 +155,10 @@ nav ul li:active{
     flex: 100%;
     text-align: center;
 }
-/*--------Navbar----------*/
-
+/*--------Check us out----------*/
+.checkUsOut{
+    background-color: #84B1D9;
+}
 /*--------Navbar----------*/
 
 /*--------Navbar----------*/
