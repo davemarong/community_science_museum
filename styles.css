@@ -8,20 +8,22 @@
 
 /*----------------------GLOBAL----------*/
 /*--------Global----------*/
+body, header, main, footer{
+    margin: 0px;
+    padding: 0px;
+}
 h1{
     color: white;
 }
 h2{
     color: #04C4D9;
 }
+
 /*--------HR----------*/
 .redHR{
     height: 5px;
     width: 150px;
     background-color: #F28080;
-    position: absolute;
-    left: -10px;
-    bottom: 10px;
     border-radius: 100px;
 }
 /*--------Buttons----------*/
@@ -155,12 +157,51 @@ nav ul li:active{
     flex: 100%;
     text-align: center;
 }
+.redHR__category{
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+}
 /*--------Check us out----------*/
 .checkUsOut{
     background-color: #84B1D9;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-/*--------Navbar----------*/
-
+.checkUsOut p, .checkUsOut h2, .checkUsOut ul{
+    flex: 100%;
+    text-align: center;
+}
+.redHR__checkUsOut{
+    margin-right: auto;
+    position: relative;
+    right: 10px;
+}
+/*--------Footer----------*/
+.footer{
+    background-color: #025E73;
+    padding-left: 60px;
+}
+.logo__footer{
+    float: none;
+}
+.redHR__footer{
+    margin-left: auto;
+    position: absolute;
+    left: 0px;
+}
+.greyHR{
+    height: 5px;
+    width: 90%;
+    background-color: grey;
+    border-radius: 100px;
+}
+.footer__rights{
+    margin-left: -60px;
+    width: auto;
+    text-align: center;
+}
 /*--------Navbar----------*/
 
 /*--------Navbar----------*/
