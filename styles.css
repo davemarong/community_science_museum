@@ -8,7 +8,7 @@
 
 /*----------------------GLOBAL----------*/
 /*--------Global----------*/
-body, header, main, footer{
+body, header, main, footer, ul{
     margin: 0px;
     padding: 0px;
 }
@@ -37,8 +37,7 @@ h2{
     font-size: 1.5em;
     font-weight: bolder;
     box-shadow: 0px 0px 10px;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin: 20px;
     cursor: pointer;
     -webkit-appearance: none;
     text-align: center;
@@ -101,6 +100,22 @@ nav ul li:active{
     text-decoration: underline;
 }
 
+/*--------Top Page----------*/
+.topPage{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-image: url(images/Group%207.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.topPage__h1, .topPage__h2{
+    flex: 100%;
+    text-align: center;
+}
+
 /*--------Footer----------*/
 .footer{
     background-color: #025E73;
@@ -135,21 +150,6 @@ nav ul li:active{
 
 
 /*----------------------HOME PAGE----------*/
-/*--------Top Page----------*/
-.topPage{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    background-image: url(images/Group%207.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-}
-.topPage__h1, .topPage__h2{
-    flex: 100%;
-    text-align: center;
-}
 /*--------Special Deal----------*/
 
 .specialDeal{
@@ -225,15 +225,66 @@ nav ul li:active{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 80px 10px;
+}
+.exhibition p{
+    max-width: 85%;
+}
+.redHR__exhibition{
+    width: 250px;
 }
 
-/*--------Navbar----------*/
+/*--------Open Hours----------*/
+.openHours{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 
-/*--------Navbar----------*/
+}
+.openHours ul{
+    list-style-type: none;
+}
+.openHours ul li{
+    color: #025E73;
+    margin: 10px;
+}
+.openHours ul li:last-child{
+    color: red;
+}
 
-/*--------Navbar----------*/
-
+/*--------Prices----------*/
+.visit__info{
+    background: #84B1D9;
+}
+.prices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.prices ul{
+    list-style-type: none;
+}
+.prices ul li{
+    margin: 10px;
+}
+.familyDeal{
+    background: #04C4D9;
+    border-radius: 50px;
+    width: 95%;
+    box-shadow: 0px 0px 5px;
+    text-align: center;
+}
+/*--------Google map----------*/
+.visit__map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.map{
+    width: 90%;
+    height: 400px;
+    margin: 30px 0 60px 0;
+}
 /*--------Navbar----------*/
 
 /*--------Navbar----------*/
@@ -265,8 +316,22 @@ nav ul li:active{
 
 
 /*----------------------ABOUT----------*/
-/*--------Navbar----------*/
-
+/*--------Top Page----------*/
+.topPage-about{
+    background-image: url(images/Group%203.png);
+}
+.history{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+}
+.history p{
+    max-width: 85%;
+}
+.history img{
+    margin: 10px;
+}
 
 /*--------Navbar----------*/
 
