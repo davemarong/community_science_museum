@@ -50,11 +50,13 @@ h2{
 }
 /*--------Header----------*/
 .header{
-    margin-bottom: 15px;
+    position: relative;
 }
 .logo{
     width: 75px;
     float: right;
+    position: absolute;
+    right: 0px;
 }
 /*--------Navbar----------*/
 nav {
@@ -83,7 +85,7 @@ nav ul li:active{
     background: #025E73;
 }
 .hamburger__icon{
-    font-size: 30px;
+    font-size: 40px;
     position: relative;
     left: 9px;
     top: 5px;
@@ -99,8 +101,31 @@ nav ul li:active{
     text-decoration: underline;
 }
 
-/*--------Navbar----------*/
-
+/*--------Footer----------*/
+.footer{
+    background-color: #025E73;
+    padding-left: 60px;    
+}
+.logo__footer{
+    float: none;
+    position: relative;
+}
+.redHR__footer{
+    margin-left: auto;
+    position: absolute;
+    left: 0px;
+}
+.greyHR{
+    height: 5px;
+    width: 90%;
+    background-color: grey;
+    border-radius: 100px;
+}
+.footer__rights{
+    margin-left: -60px;
+    width: auto;
+    text-align: center;
+}
 /*--------Navbar----------*/
 
 /*--------Navbar----------*/
@@ -178,30 +203,6 @@ nav ul li:active{
     position: relative;
     right: 10px;
 }
-/*--------Footer----------*/
-.footer{
-    background-color: #025E73;
-    padding-left: 60px;
-}
-.logo__footer{
-    float: none;
-}
-.redHR__footer{
-    margin-left: auto;
-    position: absolute;
-    left: 0px;
-}
-.greyHR{
-    height: 5px;
-    width: 90%;
-    background-color: grey;
-    border-radius: 100px;
-}
-.footer__rights{
-    margin-left: -60px;
-    width: auto;
-    text-align: center;
-}
 /*--------Navbar----------*/
 
 /*--------Navbar----------*/
@@ -212,10 +213,20 @@ nav ul li:active{
 
 
 /*----------------------VISIT----------*/
-/*--------Navbar----------*/
+/*--------Hero Image----------*/
+.topPage-heroImage{
+    background-image:url(images/Group%205.png);
+}
 
-
-/*--------Navbar----------*/
+/*--------Exhibition----------*/
+.exhibition{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
 
 /*--------Navbar----------*/
 
