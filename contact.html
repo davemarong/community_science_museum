@@ -6,53 +6,54 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <div>
-                <img src="" alt="">
-            </div>
+        <header class="header">
+            <label class="hamburger__icon" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu">
+            <img class="logo" src="images/logo.png" alt="A logo of the letters: CSM">
             <nav>
                 <ul>
                     <a href="index.html"><li>Home</li></a>
                     <a href="visit.html"><li>Visit</li></a>
                     <a href="tickets.html"><li>Tickets</li></a>
                     <a href="about.html"><li>About</li></a>
-                    <a href="contact.html"><li>Contact</li></a>
+                    <a class="ul-active" href="contact.html"><li>Contact</li></a>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section>
+        <main class="contact">
+            <section class="topPage  topPage-contact">
                 <h1>Contact</h1>
             </section>
-            <section>
+            <section class="contact__form">
             <img src="" alt="">
             <h2>Get in touch</h2>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Adressen er </li>
+                    <li>Vårt mobil nr</li>
+                    <li>Vår email adresse</li>
                 </ul>
-                <input type="text" name="" value="Name">
-                <input type="email" name="" value="Email adress">
-                <input type="text" name="" value="Write your message here">
-                <input type="button" name="" value="Send">
+                <input class="contact__form-input" type="text" name="" placeholder="Name...">
+                <input class="contact__form-input" type="email" name="" placeholder="Email...">
+                <textarea class="contact__form-input contact__form-message" type="text" name="" placeholder="Write your message here..."></textarea>
+                <input class="contact__form-input button button-form" type="button" name="" value="Send">
             </section>
         </main>
-        <footer>
-            <img src="" alt="">
-            <img src="" alt="">
-            <section>
+         <footer class="footer">
+            <img class="logo logo__footer" src="images/logo.png" alt="A logo of the letters: CSM">
+            <div class="redHR redHR__footer"></div>
+            <section class="footer__visit">
                 <h2>Visit us</h2>
-                <p></p>
+                <p>We have an adress here, and here. And also here bro.</p>
             </section>
-            <section>
+            <section class="footer__contact">
                 <h2>Contact us</h2>
                 <p></p>
             </section>
-            <section>
+            <section class="footer__connect">
                 <h2>Connect with us</h2>
                 <ul>
                     <li><img src="" alt=""></li>
@@ -63,8 +64,8 @@
                     <li><img src="" alt=""></li>
                 </ul>
             </section>
-            <hr>
-            <section>
+            <div class="greyHR"></div>
+            <section class="footer__rights">
                 <p>Community Science Museum 2020 © All rights reserved</p>
             </section>
         </footer>
