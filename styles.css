@@ -300,10 +300,63 @@ nav ul li:active{
 
 
 
-/*----------------------TICKETS----------*/
+/*----------------------TICKETS PAGE 1----------*/
+
+/*--------Tickets Page----------*/
+.ticketsPage{
+    background: linear-gradient(#04C4D9, #84B1D9);
+
+}
+/*--------Top Page----------*/
+.topPage-tickets{
+    background-image: url(images/Group%206.png);
+}
+.tickets__form-container{
+    height: 700px;
+}
+/*--------Ticket Form----------*/
+.tickets__form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    padding: 10px 40px;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 0 0 10px;
+    background: white;
+}
+.tickets__form label{
+    margin: 40px 0 3px 0;
+}
+.button-ticketsForm{
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    margin: 50px 0 0 0;
+}
+.tickets__form a{
+    margin-left: auto;
+}
+.tickets__form select{
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 45px;
+    height: 25px;
+}
+.tickets__form > input{
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 150px;
+    height: 25px;
+}
+.prices-tickets{
+    background: white;
+}
 /*--------Navbar----------*/
 
-
 /*--------Navbar----------*/
 
 /*--------Navbar----------*/
@@ -312,13 +365,57 @@ nav ul li:active{
 
 /*--------Navbar----------*/
 
-/*--------Navbar----------*/
+/*----------------------TICKETS PAGE 2----------*/
+.tickets__form-container form{
+    padding-top: 100px;
+}
+.tickets__form-2{
+    height: 450px;
+}
+.tickets__form-2 > input{
+    width: 250px;
+}
+.button-ticketsForm-2{
+    margin: 30px 0 0 60px;
+}
 
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-
+/*----------------------TICKETS PAGE 3----------*/
+.tickets__form-3{
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.tickets__form-3 > label{
+    flex: 100%;
+}
+#expirationDate-month{
+    width: 50px;
+}
+#expirationDate-year{
+    width: 100px;
+}
+.extraSpace{
+    width: 30px;
+}
+.extraSpace2{
+    flex: 20%;
+}
+#nameOnCard, #creditCardNumber{
+    width: 250px;
+}
+#securityCode{
+    width: 50px;
+}
+.extraSpace3{
+    flex: 60%;
+}
+.tickets__form-3 input:last-child{
+    height: 30px;
+    margin: 0 0 10px auto;
+    width: 120px;
+}
 
 
 /*----------------------ABOUT----------*/
@@ -405,7 +502,7 @@ nav ul li:active{
     height: 100px;
     resize: none;
 }
-.button-form{
+.button-contactForm{
     box-shadow: 0px 0px 3px;
 }
 /*--------Navbar----------*/

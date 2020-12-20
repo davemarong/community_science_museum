@@ -6,28 +6,28 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tickets</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <div>
-                <img src="" alt="">
-            </div>
+        <header class="header">
+            <label class="hamburger__icon" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu">
+            <img class="logo" src="images/logo.png" alt="A logo of the letters: CSM">
             <nav>
                 <ul>
                     <a href="index.html"><li>Home</li></a>
                     <a href="visit.html"><li>Visit</li></a>
-                    <a href="tickets.html"><li>Tickets</li></a>
+                    <a class="ul-active" href="tickets.html"><li>Tickets</li></a>
                     <a href="about.html"><li>About</li></a>
                     <a href="contact.html"><li>Contact</li></a>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section>
-                <img src="" alt="">
+        <main class="ticketsPage">
+            <section class="tickets__form-container">
                 <form>
-                    <fieldset>
+                    <fieldset class="tickets__form tickets__form-2">
                         <label for="firstName">First Name</label>
                         <input type="text" name="firstName" placeholder="First Name..." id="firstName">
                         <label for="lastName">Last Name</label>
@@ -36,37 +36,10 @@
                         <input type="email" name="email" placeholder="email" id="email">
                         <label for="phoneNumber">Phone Number</label>
                         <input type="tel" name="phoneNumber" placeholder="Phone Number..." id="phoneNumber">
-                        <a href="tickets_3.html"><input type="button" value="Next"></a>
+                        <a href="tickets_3.html"><input class="button button-ticketsForm button-ticketsForm-2" type="button" value="Next"></a>
                     </fieldset>
                 </form>
             </section>  
         </main>
-        <footer>
-            <img src="" alt="">
-            <img src="" alt="">
-            <section>
-                <h2>Visit us</h2>
-                <p></p>
-            </section>
-            <section>
-                <h2>Contact us</h2>
-                <p></p>
-            </section>
-            <section>
-                <h2>Connect with us</h2>
-                <ul>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                </ul>
-            </section>
-            <hr>
-            <section>
-                <p>Community Science Museum 2020 © All rights reserved</p>
-            </section>
-        </footer>
     </body>
 </html>
