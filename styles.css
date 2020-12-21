@@ -31,7 +31,7 @@ h2{
 }
 /*--------Buttons----------*/
 .button{
-    border-radius: 50px;
+    border-radius: 5px;
     height: 52px;
     width: 180px;
     background: linear-gradient(#04C4D9, #84B1D9);
@@ -127,6 +127,7 @@ nav ul li:active{
 .logo__footer{
     float: none;
     position: relative;
+    margin: 15px 0;
 }
 .redHR__footer{
     margin-left: auto;
@@ -138,6 +139,7 @@ nav ul li:active{
     width: 90%;
     background-color: grey;
     border-radius: 100px;
+    margin: 20px;
 }
 .footer__rights{
     margin-left: -60px;
@@ -183,6 +185,7 @@ nav ul li:active{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 40px;
 }
 .category h2, .category a{
     flex: 100%;
@@ -269,6 +272,7 @@ nav ul li:active{
 }
 .prices ul{
     list-style-type: none;
+    margin: 30px;
 }
 .prices ul li{
     margin: 10px;
@@ -324,7 +328,7 @@ nav ul li:active{
     margin: auto;
     padding: 10px 40px;
     border: 1px solid black;
-    border-radius: 30px;
+    border-radius: 5px;
     box-shadow: 0 0 10px;
     background: white;
 }
