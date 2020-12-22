@@ -149,6 +149,15 @@ nav ul li:active{
 .footer__rights p{
     margin: 0;
 }
+.footer__socialMedia{
+    display: flex;
+    list-style-type: none;
+    
+}
+.footer__socialMedia li img{
+    width: 30px;
+    margin: 15px 15px 15px 0;
+}
 /*--------Navbar----------*/
 
 /*--------Navbar----------*/
@@ -318,6 +327,13 @@ nav ul li:active{
 .tickets__form-container{
     height: 700px;
 }
+.tickets__form-container > div{
+    display: flex;
+    justify-content: center;
+}
+.tickets__form-container > h2{
+    text-align: center;
+}
 /*--------Ticket Form----------*/
 .tickets__form{
     display: flex;
@@ -371,7 +387,7 @@ nav ul li:active{
 
 /*----------------------TICKETS PAGE 2----------*/
 .tickets__form-container form{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .tickets__form-2{
     height: 450px;

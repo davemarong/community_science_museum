@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="259" height="49" viewBox="0 0 259 49">
+  <g id="Group_8" data-name="Group 8" transform="translate(-58 -13)">
+    <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(58 13)" fill="#f28080" stroke="#707070" stroke-width="1">
+      <circle cx="24.5" cy="24.5" r="24.5" stroke="none"/>
+      <circle cx="24.5" cy="24.5" r="24" fill="none"/>
+    </g>
+    <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(183 23)" fill="#f28080" stroke="#707070" stroke-width="1" opacity="0.698">
+      <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+      <circle cx="14.5" cy="14.5" r="14" fill="none"/>
+    </g>
+    <g id="Ellipse_17" data-name="Ellipse 17" transform="translate(288 23)" fill="#f28080" stroke="#707070" stroke-width="1" opacity="0.698">
+      <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+      <circle cx="14.5" cy="14.5" r="14" fill="none"/>
+    </g>
+    <line id="Line_34" data-name="Line 34" x2="52" transform="translate(118.5 37.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="5" stroke-dasharray="7"/>
+    <line id="Line_34-2" data-name="Line 34" x2="52" transform="translate(224 37.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="5" stroke-dasharray="7"/>
+  </g>
+</svg>
