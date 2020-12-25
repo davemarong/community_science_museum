@@ -333,6 +333,7 @@ nav ul li:active{
 }
 .tickets__form-container > h2{
     text-align: center;
+    color: #272727;
 }
 /*--------Ticket Form----------*/
 .tickets__form{
