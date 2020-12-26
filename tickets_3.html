@@ -25,9 +25,14 @@
             </nav>
         </header>
         <main class="ticketsPage">
-            <section class="tickets__form-container">
+            <section class="tickets__form-container" id="ticketsAnchor3">
                 <h2>Choose your tickets</h2>
-                <div><img src="images/progress-3.svg" alt="Vector image of a 'progress bar'"></div>
+                <div><img src="images/progress-3.svg" alt="Vector image of a 'progress bar'" usemap="#progress-circle3"></div>
+                <map name="progress-circle3">
+                    <area target="_self" alt="Progress Bar" title="Progress Bar" href="tickets.html#ticketsAnchor" coords="-1,20,36,61" shape="rect">
+                    <area target="_self" alt="Progress Bar" title="Progress Bar" href="tickets_2.html#ticketsAnchor2" coords="108,17,151,61" shape="rect">
+                    <area target="_self" alt="Progress Bar" title="Progress Bar" href="tickets_3.html#ticketsAnchor3" coords="203,7,268,72" shape="rect">
+                </map>
                 <form>
                     <fieldset class="tickets__form tickets__form-3">
                         <label for="nameOnCard">Name on Card</label>

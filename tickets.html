@@ -30,8 +30,14 @@
             </section>
             <section class="tickets__form-container" id="ticketsAnchor">
                 <h2>Choose your tickets</h2>
-                <div><img src="images/progress-1.svg" alt="Vector image of a 'progress bar'"></div>
+                <div><img src="images/progress-1.svg" alt="Vector image of a 'progress bar'" usemap="#progress-circle1"></div>
+                <map name="progress-circle1">
+                    <area target="_self" alt="Progress Bar" title="Progress Bar" href="tickets.html#ticketsAnchor" coords="-1,1,50,48" shape="rect">
+                    <area target="_self" alt="Progress Bar" title="Progress Bar" href="tickets_2.html#ticketsAnchor2" coords="120,5,157,42" shape="rect">
+                    <area target="_self" alt="Progress Bar" title="Progress Bar" href="tickets_3.html#ticketsAnchor3" coords="225,5,258,43" shape="rect"> 
+                </map>
                 <form>
+
                     <fieldset class="tickets__form tickets__form-1">
                         <label for="adults">Adults</label>
                         <select id="adults" name="Adults">
@@ -48,6 +54,19 @@
                         </select>
                         <label for="children">Children</label>
                         <select id="children" name="Children">
+                            <option name="0">0</option>
+                            <option name="1">1</option>
+                            <option name="2">2</option>
+                            <option name="3">3</option>
+                            <option name="4">4</option>
+                            <option name="5">5</option>
+                            <option name="6">6</option>
+                            <option name="7">7</option>
+                            <option name="8">8</option>
+                            <option name="9">9</option>
+                        </select>
+                        <label for="family">Family ticket</label>
+                        <select id="family" name="Family">
                             <option name="0">0</option>
                             <option name="1">1</option>
                             <option name="2">2</option>
