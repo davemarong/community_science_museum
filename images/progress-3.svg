@@ -1,29 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="274" height="79" viewBox="0 0 274 79">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="278" height="67" viewBox="0 0 278 67">
   <defs>
-    <filter id="Ellipse_19" x="195" y="0" width="79" height="79" filterUnits="userSpaceOnUse">
-      <feOffset input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feFlood/>
+    <filter id="Ellipse_15" x="211" y="0" width="67" height="67" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="Group_10" data-name="Group 10" transform="translate(-72 2)">
-    <g transform="matrix(1, 0, 0, 1, 72, -2)" filter="url(#Ellipse_19)">
-      <g id="Ellipse_19-2" data-name="Ellipse 19" transform="translate(210 15)" fill="#f28080" stroke="#707070" stroke-width="1">
-        <circle cx="24.5" cy="24.5" r="24.5" stroke="none"/>
-        <circle cx="24.5" cy="24.5" r="24" fill="none"/>
+  <g id="Group_13" data-name="Group 13" transform="translate(-72 -7)">
+    <g id="Group_10" data-name="Group 10">
+      <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(187 23)" fill="#f28080" stroke="#707070" stroke-width="1">
+        <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+        <circle cx="14.5" cy="14.5" r="14" fill="none"/>
+      </g>
+      <g id="Ellipse_18" data-name="Ellipse 18" transform="translate(72 23)" fill="#f28080" stroke="#707070" stroke-width="1">
+        <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+        <circle cx="14.5" cy="14.5" r="14" fill="none"/>
+      </g>
+      <line id="Line_34" data-name="Line 34" x2="52" transform="translate(120.5 37.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="5" stroke-dasharray="7"/>
+    </g>
+    <g id="Group_11" data-name="Group 11" transform="translate(-60 -32)">
+      <g transform="matrix(1, 0, 0, 1, 132, 39)" filter="url(#Ellipse_15)">
+        <g id="Ellipse_15-2" data-name="Ellipse 15" transform="translate(220 6)" fill="#f28080" stroke="#707070" stroke-width="1">
+          <circle cx="24.5" cy="24.5" r="24.5" stroke="none"/>
+          <circle cx="24.5" cy="24.5" r="24" fill="none"/>
+        </g>
       </g>
     </g>
-    <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(187 23)" fill="#f28080" stroke="#707070" stroke-width="1">
-      <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
-      <circle cx="14.5" cy="14.5" r="14" fill="none"/>
+    <g id="Group_12" data-name="Group 12" transform="translate(17 9)">
+      <path id="Path_8" data-name="Path 8" d="M0,0H52" transform="translate(211 29.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="5" stroke-dasharray="7"/>
     </g>
-    <g id="Ellipse_18" data-name="Ellipse 18" transform="translate(72 23)" fill="#f28080" stroke="#707070" stroke-width="1">
-      <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
-      <circle cx="14.5" cy="14.5" r="14" fill="none"/>
-    </g>
-    <line id="Line_34" data-name="Line 34" x2="52" transform="translate(120.5 37.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="5" stroke-dasharray="7"/>
-    <line id="Line_35" data-name="Line 35" x2="40" transform="translate(230.5 37.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="5" stroke-dasharray="7"/>
   </g>
 </svg>

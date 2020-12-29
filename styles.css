@@ -157,7 +157,7 @@ nav ul li:active{
 .footer__socialMedia{
     display: flex;
     list-style-type: none;
-    
+
 }
 .footer__socialMedia li img{
     width: 30px;
@@ -381,7 +381,6 @@ nav ul li:active{
 .tickets__form > input{
     border: 2px solid grey;
     border-radius: 5px;
-    width: 150px;
     height: 25px;
 }
 .prices-tickets{
@@ -401,10 +400,19 @@ nav ul li:active{
 .tickets__form-container form{
     padding-top: 50px;
 }
-.tickets__form-2{
+.tickets__form-2 > input, .tickets__form-3 > input{
+    width: 70%;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-radius: 0px;
+    outline: none;   
+    transition: all 0.3s;
 }
-.tickets__form-2 > input{
-    width: 250px;
+.tickets__form-2 > input:focus, .tickets__form-3 > input:focus{
+    border-bottom: 4px solid #F28080;
+    width: 90%;
+    
 }
 .button-ticketsForm-2{
     margin: 30px 0 20px 60px;
@@ -420,10 +428,18 @@ nav ul li:active{
 .tickets__form-3 > label{
     flex: 100%;
 }
-#expirationDate-month{
+#expirationDate-month, #securityCode{
+    width: 30px;
+}
+
+#expirationDate-year{
+    width: 70px;
+}
+#expirationDate-month:focus, #securityCode:focus{
     width: 50px;
 }
-#expirationDate-year{
+
+#expirationDate-year:focus{
     width: 100px;
 }
 .extraSpace{
@@ -432,18 +448,12 @@ nav ul li:active{
 .extraSpace2{
     flex: 20%;
 }
-#nameOnCard, #creditCardNumber{
-    width: 250px;
-}
-#securityCode{
-    width: 50px;
-}
 .extraSpace3{
-    flex: 60%;
+    flex: 100%;
 }
 .tickets__form-3 input:last-child{
     height: 30px;
-    margin: 0 0 10px auto;
+    margin: 20px 0 10px auto;
     width: 120px;
 }
 
