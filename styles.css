@@ -5,6 +5,8 @@
 #F28080 - Red
 #F5F5F5 - Light white
 #1D1D1D - Light black
+
+linear-gradient(#04C4D9, #84B1D9) - Blue/Dark blue
 */
 
 
@@ -144,7 +146,7 @@ nav ul li:active{
     width: 90%;
     background-color: grey;
     border-radius: 100px;
-    margin: 20px;
+    margin: 20px 0;
 }
 .footer__rights{
     margin-left: -60px;
@@ -163,6 +165,9 @@ nav ul li:active{
     width: 30px;
     margin: 15px 15px 15px 0;
 }
+.footer__socialMedia li:last-child img{
+    margin-right: 0px;
+}
 /*--------Navbar----------*/
 
 /*--------Navbar----------*/
@@ -173,24 +178,29 @@ nav ul li:active{
 
 /*----------------------HOME PAGE----------*/
 /*--------Special Deal----------*/
-
-.specialDeal{
-    background-color: #84B1D9;
+.specialDeal a{
+    text-decoration: none;
+}
+.specialDeal__container{
+    background: #84B1D9;
     height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    transition: background 0.3s;
 }
-.specialDeal__family{
-    background-color: white;
-    width: 150px;
-    height: 60px;
-    border: 1px solid black;
+.specialDeal__container:hover{
+    background: #04C4D9;
+    cursor: pointer;
 }
-.specialDeal__family p{
+.specialDeal p{
     font-size: 1.3em;
-    margin: auto;
-    padding: 5px;
+    margin-left: 20px;
+}
+.specialDeal img{
+    width: 30px;
+    margin-right: 20px;
+    color: yellow;
 }
 
 /*--------Category----------*/
@@ -221,6 +231,10 @@ nav ul li:active{
     flex: 100%;
     text-align: center;
     color: #1d1d1d;
+}
+.checkUsOut > img{
+    width: 100%;
+    height: auto;
 }
 .redHR__checkUsOut{
     margin-right: auto;
@@ -412,7 +426,7 @@ nav ul li:active{
 .tickets__form-2 > input:focus, .tickets__form-3 > input:focus{
     border-bottom: 4px solid #F28080;
     width: 90%;
-    
+
 }
 .button-ticketsForm-2{
     margin: 30px 0 20px 60px;
@@ -462,6 +476,9 @@ nav ul li:active{
 /*--------Top Page----------*/
 .topPage-about{
     background-image: url(images/Group%203.png);
+}
+.about__img{
+    width: 70%;
 }
 .history{
     display: flex;
