@@ -7,6 +7,7 @@
 #1D1D1D - Light black
 
 linear-gradient(#04C4D9, #84B1D9) - Blue/Dark blue
+linear-gradient(#63EFFF, #D1E9FF) - Lighter Blue/Dark blue
 */
 
 
@@ -24,6 +25,9 @@ h2{
 }
 *{
     box-sizing: border-box
+}
+p{
+    font-size: 16px;
 }
 
 /*--------HR----------*/
@@ -53,6 +57,12 @@ h2{
 .button-small{
     width: 140px;
     height: 42px;
+}
+.button:hover{
+    background: linear-gradient(#63EFFF, #D1E9FF);
+}
+.button:active{
+    background: linear-gradient(#037F8C, #56738C);
 }
 /*--------Header----------*/
 .header{
@@ -110,8 +120,10 @@ nav ul li:active{
 /*--------Top Page----------*/
 .topPage{
     display: flex;
+    display:-webkit-flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     background-image: url(images/Group%207.png);
     background-size: cover;
@@ -129,6 +141,9 @@ nav ul li:active{
     padding-left: 60px;    
 }
 .footer p{
+    color: #f5f5f5;
+}
+.footer a{
     color: #f5f5f5;
 }
 .logo__footer{
@@ -155,9 +170,11 @@ nav ul li:active{
 }
 .footer__rights p{
     margin: 0;
+    padding-bottom: 20px;
 }
 .footer__socialMedia{
     display: flex;
+    display:-webkit-flex;
     list-style-type: none;
 
 }
@@ -185,13 +202,18 @@ nav ul li:active{
     background: #84B1D9;
     height: 100px;
     display: flex;
+    display:-webkit-flex;
     justify-content: space-between;
     align-items: center;
     transition: background 0.3s;
 }
 .specialDeal__container:hover{
-    background: #04C4D9;
+    background: #05E6FF;
     cursor: pointer;
+}
+.specialDeal__container:active{
+    background: #04ADBF;
+    transition: none;
 }
 .specialDeal p{
     font-size: 1.3em;
@@ -207,6 +229,7 @@ nav ul li:active{
 .category{
     position: relative;
     display: flex;
+    display:-webkit-flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 40px;
@@ -224,6 +247,7 @@ nav ul li:active{
 .checkUsOut{
     background-color: #84B1D9;
     display: flex;
+    display:-webkit-flex;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -254,11 +278,13 @@ nav ul li:active{
 /*--------Hero Image----------*/
 .topPage-heroImage{
     background-image:url(images/Group%205.png);
+    align-items: center;
 }
 
 /*--------Exhibition----------*/
 .exhibition{
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -275,6 +301,7 @@ nav ul li:active{
 /*--------Open Hours----------*/
 .openHours{
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
     align-items: center; 
 
@@ -299,6 +326,7 @@ nav ul li:active{
 }
 .prices{
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
     align-items: center;
 }
@@ -322,6 +350,7 @@ nav ul li:active{
 /*--------Google map----------*/
 .visit__map{
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
     align-items: center;
 }
@@ -355,6 +384,7 @@ nav ul li:active{
 }
 .tickets__form-container > div{
     display: flex;
+    display:-webkit-flex;
     justify-content: center;
 }
 .tickets__form-container > h2{
@@ -364,6 +394,7 @@ nav ul li:active{
 /*--------Ticket Form----------*/
 .tickets__form{
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
     align-items: flex-start;
     width: 80%;
@@ -435,6 +466,7 @@ nav ul li:active{
 /*----------------------TICKETS PAGE 3----------*/
 .tickets__form-3{
     display: flex;
+    display:-webkit-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -482,6 +514,7 @@ nav ul li:active{
 }
 .history{
     display: flex;
+    display:-webkit-flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items:center;
@@ -496,6 +529,7 @@ nav ul li:active{
 }
 .about__article{
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
     align-items: center;
 }
@@ -534,6 +568,7 @@ nav ul li:active{
 /*--------Contact Form----------*/
 .contact__form{
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
