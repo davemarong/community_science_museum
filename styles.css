@@ -295,7 +295,7 @@ nav ul li:active{
 
 /*----------------------VISIT----------*/
 /*--------Hero Image----------*/
-.topPage-heroImage{
+.topPage-visit{
     background-image:url(images/Group%205.png);
     align-items: center;
 }
@@ -336,11 +336,12 @@ nav ul li:active{
     list-style-type: none;
 }
 .openHours ul li{
-    color: #025E73;
+    color: #2b2b2b;
     margin: 10px;
 }
 .openHours ul li:last-child{
-    color: red;
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 /*--------Prices----------*/
@@ -365,7 +366,7 @@ nav ul li:active{
 }
 .familyDeal{
     background: #04C4D9;
-    border-radius: 50px;
+    border-radius: 10px;
     width: 95%;
     box-shadow: 0px 0px 5px;
     text-align: center;
@@ -554,6 +555,14 @@ nav ul li:active{
     margin: 20px 0 10px auto;
     width: 120px;
 }
+
+/*----------------------PRICES----------*/
+/*--------Hero Image----------*/
+.topPage-prices{
+    background-image:url(images/Group-14.jpg);
+    align-items: center;
+}
+
 
 
 /*----------------------ABOUT----------*/
