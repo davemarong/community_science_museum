@@ -129,21 +129,22 @@ nav ul li:active{
     text-decoration: underline;
 }
 
-/*--------Top Page----------*/
-.topPage{
+/*--------Flexbox----------*/
+.topPage, .category, .checkUsOut, .exhibition, .openHours, .prices, .visit__map, .tickets__form-container > div, .tickets__form, .tickets__form-3, .history, .about__article, .contact__form{
     display: flex;
     display:-webkit-flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
     align-items: center;
-    flex-wrap: wrap;
+}
+/*--------Top Page----------*/
+.topPage{
     background-image: url(images/Group%207.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
 }
 .topPage__h1, .topPage__h2{
-    flex: 100%;
     text-align: center;
 }
 
@@ -191,7 +192,6 @@ nav ul li:active{
     display: flex;
     display:-webkit-flex;
     list-style-type: none;
-
 }
 .footer__socialMedia li img{
     width: 30px;
@@ -200,14 +200,6 @@ nav ul li:active{
 .footer__socialMedia li:last-child img{
     margin-right: 0px;
 }
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-
-
 /*----------------------HOME PAGE----------*/
 /*--------Special Deal----------*/
 .specialDeal a{
@@ -243,10 +235,6 @@ nav ul li:active{
 /*--------Category----------*/
 .category{
     position: relative;
-    display: flex;
-    display:-webkit-flex;
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 40px;
 }
 .category img{
@@ -265,10 +253,6 @@ nav ul li:active{
 /*--------Check us out----------*/
 .checkUsOut{
     background-color: #84B1D9;
-    display: flex;
-    display:-webkit-flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 .checkUsOut p, .checkUsOut h2, .checkUsOut ul{
     flex: 100%;
@@ -284,14 +268,6 @@ nav ul li:active{
     position: relative;
     right: 10px;
 }
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-
-
 
 /*----------------------VISIT----------*/
 /*--------Hero Image----------*/
@@ -302,12 +278,6 @@ nav ul li:active{
 
 /*--------Exhibition----------*/
 .exhibition{
-    display: flex;
-    display:-webkit-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     margin: 80px 10px;
 }
 .exhibition img{
@@ -323,12 +293,6 @@ nav ul li:active{
 }
 
 /*--------Open Hours----------*/
-.openHours{
-    display: flex;
-    display:-webkit-flex;
-    flex-direction: column;
-    align-items: center; 
-}
 .openHours h2{
     color: #1d1d1d;
 }
@@ -348,12 +312,6 @@ nav ul li:active{
 .visit__info{
     background: #84B1D9;
 }
-.prices{
-    display: flex;
-    display:-webkit-flex;
-    flex-direction: column;
-    align-items: center;
-}
 .prices h2{
     color: #1d1d1d;
 }
@@ -372,23 +330,11 @@ nav ul li:active{
     text-align: center;
 }
 /*--------Google map----------*/
-.visit__map{
-    display: flex;
-    display:-webkit-flex;
-    flex-direction: column;
-    align-items: center;
-}
 .map{
     width: 90%;
     height: 400px;
     margin: 30px 0 60px 0;
 }
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
 
 
 
@@ -406,20 +352,12 @@ nav ul li:active{
 .tickets__form-container{
     height: 700px;
 }
-.tickets__form-container > div{
-    display: flex;
-    display:-webkit-flex;
-    justify-content: center;
-}
 .tickets__form-container > h2{
     text-align: center;
     color: #272727;
 }
 /*--------Ticket Form----------*/
 .tickets__form{
-    display: flex;
-    display:-webkit-flex;
-    flex-direction: column;
     align-items: flex-start;
     width: 80%;
     margin: auto;
@@ -518,8 +456,6 @@ nav ul li:active{
 
 /*----------------------TICKETS PAGE 3----------*/
 .tickets__form-3{
-    display: flex;
-    display:-webkit-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -573,13 +509,6 @@ nav ul li:active{
 .about__img{
     width: 70%;
 }
-.history{
-    display: flex;
-    display:-webkit-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:center;
-}
 .history h2{
 }
 .history p{
@@ -588,30 +517,9 @@ nav ul li:active{
 .history img{
     margin: 10px;
 }
-.about__article{
-    display: flex;
-    display:-webkit-flex;
-    flex-direction: column;
-    align-items: center;
-}
 .about__article p{
     max-width: 80%;
 }
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-
 
 
 /*----------------------CONTACT----------*/
@@ -628,10 +536,6 @@ nav ul li:active{
 
 /*--------Contact Form----------*/
 .contact__form{
-    display: flex;
-    display:-webkit-flex;
-    flex-direction: column;
-    align-items: center;
     width: 80%;
     border: 2px solid black;
     border-radius: 5px;
@@ -639,6 +543,10 @@ nav ul li:active{
     background: white;
     margin: auto;
     margin-top: 90px;
+}
+.contact__form ul{
+    list-style-type: none;
+    text-align: center;
 }
 .contact__form ul li{
     margin: 17px;
@@ -658,16 +566,6 @@ nav ul li:active{
 .button-contactForm{
     box-shadow: 0px 0px 3px;
 }
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
 
 
 /*----------------------MEDIA QUERIES----------*/
