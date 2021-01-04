@@ -82,6 +82,7 @@ label{
     float: right;
     position: absolute;
     right: 0px;
+    margin: 7px;
 }
 /*--------Navbar----------*/
 nav {
@@ -90,7 +91,6 @@ nav {
 nav > ul{
     background: linear-gradient(#04C4D9, #84B1D9);
     margin: 0;
-    margin-top: 20px;
     list-style-type: none;
     padding: 0;
 }
@@ -124,6 +124,7 @@ nav ul li:active{
 }
 .ul-active{
     text-decoration: underline;
+    text-decoration-color: #F28080;
 }
 
 /*--------Flexbox----------*/
@@ -566,7 +567,6 @@ nav ul li:active{
 
 
 /*----------------------MEDIA QUERIES----------*/
-/*--------Navbar----------*/
 @media only screen and (min-width: 600px){
     .specialDeal__container{
         justify-content: space-around;
@@ -617,12 +617,66 @@ nav ul li:active{
         text-align: start;
     }
     .redHR{
-        display: none;
+        width: 100%;
+        opacity: 0;
+    }
+    .redHR__footer {
+        position: relative;
     }
     .exhibition__text{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .openHours{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .openHours h2{
+        flex: 100%;
+    }
+    .hamburger__icon{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        padding-right: 100px;
+        background: #105e73;
+    }
+    nav ul li{
+        padding: 20px;
+        color: #e2e2e2;
+        transition: 0.3s color;
+    }
+    nav ul li:hover{
+        background: none;
+        color: #FF5000;
+    }
+    nav ul li:active{
+        background: none;
+    }
+    
+    
+    
+    .tickets__form{
+        max-width: 400px;
+    }
+    
+    
+    .contact__form{
+        max-width: 600px;
     }
 }
 
