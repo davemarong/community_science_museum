@@ -28,6 +28,7 @@ h2{
 }
 h3{
     font-size: 1.3em;
+    text-align: center;
 }
 *{
     box-sizing: border-box
@@ -36,7 +37,7 @@ p, input{
     font-size: 16px;
 }
 label{
-    font-size: 13px;
+    font-size: 0.8em;
 }
 
 /*--------HR----------*/
@@ -257,9 +258,12 @@ nav ul li:active{
     text-align: center;
     color: #1d1d1d;
 }
+.checkUsOut a{
+    margin-bottom: 40px;
+}
 .checkUsOut > img{
-    width: 100%;
-    height: auto;
+    width: 70%;
+    max-width: 500px;
 }
 .redHR__checkUsOut{
     margin-right: auto;
@@ -291,6 +295,9 @@ nav ul li:active{
 }
 
 /*--------Open Hours----------*/
+.openHours{
+    padding-bottom: 50px;
+}
 .openHours h2{
     color: #1d1d1d;
 }
@@ -410,7 +417,7 @@ nav ul li:active{
     border-radius: 5px;
     width: 55px;
     height: 25px;
-    font-size: 16px;
+    font-size: 1em;
 }
 .tickets__form > input{
     border: 2px solid grey;
@@ -568,6 +575,9 @@ nav ul li:active{
 
 /*----------------------MEDIA QUERIES----------*/
 @media only screen and (min-width: 600px){
+    body{
+        font-size: 18px;
+    }
     .specialDeal__container{
         justify-content: space-around;
     }
@@ -678,8 +688,50 @@ nav ul li:active{
     .contact__form{
         max-width: 600px;
     }
+    
+    .topPage{
+        background-image: url(images/rover.jpg);
+    }
+    .topPage-visit{
+        background-image: url(images/space-woman.jpg);
+    }
+    .topPage-tickets{
+         background-image: url(images/lab-people.jpg);
+    }
+    .topPage-prices{
+         background-image: url(images/globus.jpg);
+    }
+    .topPage-about{
+         background-image: url(images/reagent-tubes.jpg);
+            
+    }
+    .topPage-contact{
+         background-image: url(images/universe.jpg);
+    }
+    
+    
+    
+    
 }
 
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+    .topPage{
+        height: 700px;
+    }
+    body{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1439px){
+    .topPage{
+        height: 1000px;
+    }
+    body{
+        font-size: 24px;
+    }
+}
 /*--------Navbar----------*/
 
 /*--------Navbar----------*/
