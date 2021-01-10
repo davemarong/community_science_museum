@@ -226,9 +226,10 @@ nav ul li:active{
     margin-left: 20px;
 }
 .specialDeal img{
+    position: absolute;
+    right: 0px;
     width: 30px;
-    margin-right: 20px;
-    color: yellow;
+    margin-right: 50px;
 }
 
 /*--------Category----------*/
@@ -264,6 +265,8 @@ nav ul li:active{
 .checkUsOut > img{
     width: 70%;
     max-width: 500px;
+    margin-bottom: 50px;
+
 }
 .redHR__checkUsOut{
     margin-right: auto;
@@ -331,6 +334,7 @@ nav ul li:active{
     background: #04C4D9;
     border-radius: 10px;
     width: 95%;
+    max-width: 400px;
     box-shadow: 0px 0px 5px;
     text-align: center;
 }
@@ -363,6 +367,7 @@ nav ul li:active{
 }
 /*--------Ticket Form----------*/
 .tickets__form{
+    position: relative;
     align-items: flex-start;
     width: 80%;
     margin: auto;
@@ -373,12 +378,13 @@ nav ul li:active{
     background: white;
 }
 .hintBox{
-    position: relative;
-    display: inline-block;
-    width: 20px;
+    position: absolute;
+    left: 100px;
+    width: 1.25em;
     text-align: center;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 50px;
+    background: lightblue;
 }
 .hintBox__text{
     visibility: hidden;
@@ -416,7 +422,6 @@ nav ul li:active{
     border: 2px solid grey;
     border-radius: 5px;
     width: 55px;
-    height: 25px;
     font-size: 1em;
 }
 .tickets__form > input{
@@ -438,6 +443,10 @@ nav ul li:active{
 /*--------Navbar----------*/
 
 /*----------------------TICKETS PAGE 2----------*/
+.ticketsPage h2{
+    margin: 0;
+    padding: 20px;
+}
 .tickets__form-container form{
     padding-top: 50px;
 }
@@ -579,7 +588,7 @@ nav ul li:active{
         font-size: 18px;
     }
     .specialDeal__container{
-        justify-content: space-around;
+        justify-content: center;
     }
     .specialDeal p{
         font-size: 2.3em;
@@ -677,18 +686,18 @@ nav ul li:active{
     nav ul li:active{
         background: none;
     }
-    
-    
-    
+
+
+
     .tickets__form{
         max-width: 400px;
     }
-    
-    
+
+
     .contact__form{
         max-width: 600px;
     }
-    
+
     .topPage{
         background-image: url(images/rover.jpg);
     }
@@ -696,22 +705,22 @@ nav ul li:active{
         background-image: url(images/space-woman.jpg);
     }
     .topPage-tickets{
-         background-image: url(images/lab-people.jpg);
+        background-image: url(images/lab-people.jpg);
     }
     .topPage-prices{
-         background-image: url(images/globus.jpg);
+        background-image: url(images/globus.jpg);
     }
     .topPage-about{
-         background-image: url(images/reagent-tubes.jpg);
-            
+        background-image: url(images/reagent-tubes.jpg);
+
     }
     .topPage-contact{
-         background-image: url(images/universe.jpg);
+        background-image: url(images/universe.jpg);
     }
-    
-    
-    
-    
+
+
+
+
 }
 
 
@@ -722,6 +731,9 @@ nav ul li:active{
     body{
         font-size: 20px;
     }
+    .hintBox{
+        left: 120px;
+    }
 }
 
 @media only screen and (min-width: 1439px){
@@ -730,6 +742,9 @@ nav ul li:active{
     }
     body{
         font-size: 24px;
+    }
+    .hintBox{
+        left: 130px;
     }
 }
 /*--------Navbar----------*/
