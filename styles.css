@@ -377,38 +377,35 @@ nav ul li:active{
     box-shadow: 0 0 10px;
     background: white;
 }
-.hintBox{
-    position: absolute;
-    left: 100px;
-    width: 1.25em;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 50px;
-    background: lightblue;
-}
-.hintBox__text{
-    visibility: hidden;
-    width: 250px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.hintBox:hover .hintBox__text{
-    visibility: visible;
-    opacity: 1;
-}
 .tickets__form label{
     margin: 40px 0 3px 0;
 }
+.hintBox__text{
+    display: none;
+}
+.hintBox{
+    display: none;
+}
+.hintbox__label{
+    position: absolute;
+    left: 100px;
+    top: 170px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2px 7px;
+    background: lightblue;
+    font-size: 15px;
+}
+#hintbox:checked ~ .hintbox__text::after {
+    content: "1 Family ticket = 2 Children tickets and 2 Adults tickets";
+}
+.visually-hidden {
+    position: absolute;
+    left: 50px;
+    width: 50px;
+    opacity: 0;
+}
+
 .button-ticketsForm{
     border-radius: 5px;
     height: 30px;
@@ -539,7 +536,7 @@ nav ul li:active{
 /*----------------------CONTACT----------*/
 .contact{
     background: linear-gradient(#04C4D9, #84B1D9);
-    height: 1200px;
+    padding-bottom: 100px;
 }
 
 /*--------Top Page----------*/
@@ -717,8 +714,41 @@ nav ul li:active{
     .topPage-contact{
         background-image: url(images/universe.jpg);
     }
-
-
+    
+    .hintbox-mobile{
+        display: none;
+    }
+    .hintBox{
+        display: block;
+        position: absolute;
+        left: 100px;
+        width: 1.25em;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 50px;
+        background: lightblue;
+    }
+    .hintBox__text{
+        display: block;
+        visibility: hidden;
+        width: 250px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .hintBox:hover .hintBox__text{
+        visibility: visible;
+        opacity: 1;
+    }
 
 
 }
