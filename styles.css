@@ -79,7 +79,7 @@ label{
     position: relative;
 }
 .logo{
-    width: 75px;
+    width: 60px;
     float: right;
     position: absolute;
     right: 0px;
@@ -129,7 +129,7 @@ nav ul li:active{
 }
 
 /*--------Flexbox----------*/
-.topPage, .category, .checkUsOut, .exhibition, .openHours, .prices, .visit__map, .tickets__form-container > div, .tickets__form, .tickets__form-3, .history, .about__article, .contact__form{
+.topPage, .category, .checkUsOut, .exhibition, .exhibition__text, .openHours, .prices, .visit__map, .tickets__form-container > div, .tickets__form, .tickets__form-3, .history, .about__article, .contact__form{
     display: flex;
     display:-webkit-flex;
     flex-direction: column;
@@ -201,6 +201,7 @@ nav ul li:active{
 }
 /*----------------------HOME PAGE----------*/
 /*--------Special Deal----------*/
+
 .specialDeal a{
     text-decoration: none;
 }
@@ -429,15 +430,6 @@ nav ul li:active{
 .prices-tickets{
     background: white;
 }
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
 
 /*----------------------TICKETS PAGE 2----------*/
 .ticketsPage h2{
@@ -581,8 +573,94 @@ nav ul li:active{
 
 /*----------------------MEDIA QUERIES----------*/
 @media only screen and (min-width: 600px){
+
+
+    /*----------------------GLOBAL----------*/
     body{
         font-size: 18px;
+    }
+    .logo{
+        width: 75px;
+    }
+    .redHR{
+        width: 100%;
+        opacity: 0;
+    }
+    .redHR__footer {
+        position: relative;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    /*---Navigation----------*/
+
+    .hamburger__icon{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        padding-right: 100px;
+        background: #105e73;
+    }
+    nav ul li{
+        padding: 20px 10px;
+        color: #e2e2e2;
+        transition: 0.3s color;
+    }
+    nav ul li:hover{
+        background: none;
+        color: #FF5000;
+    }
+    nav ul li:active{
+        background: none;
+    }
+    .hintbox-mobile{
+        display: none;
+    }
+    .hintBox{
+        display: block;
+        position: absolute;
+        left: 100px;
+        width: 1.25em;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 50px;
+        background: lightblue;
+    }
+    .hintBox__text{
+        display: block;
+        visibility: hidden;
+        width: 250px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .hintBox:hover .hintBox__text{
+        visibility: visible;
+        opacity: 1;
+    }
+    /*----------------------HOME PAGE and VISIT----------*/
+    .topPage{
+        background-image: url(images/rover.jpg);
+    }
+    .topPage-visit{
+        background-image: url(images/space-woman.jpg);
     }
     .specialDeal__container{
         justify-content: center;
@@ -632,23 +710,10 @@ nav ul li:active{
     .exhibition p{
         text-align: start;
     }
-    .redHR{
-        width: 100%;
-        opacity: 0;
-    }
-    .redHR__footer {
-        position: relative;
-    }
     .exhibition__text{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    .footer{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 20px;
     }
     .openHours{
         display: flex;
@@ -659,95 +724,31 @@ nav ul li:active{
     .openHours h2{
         flex: 100%;
     }
-    .hamburger__icon{
-        display: none;
-    }
-    nav{
-        display: block;
-    }
-    nav ul{
-        display: flex;
-        justify-content: space-around;
-        padding-right: 100px;
-        background: #105e73;
-    }
-    nav ul li{
-        padding: 20px;
-        color: #e2e2e2;
-        transition: 0.3s color;
-    }
-    nav ul li:hover{
-        background: none;
-        color: #FF5000;
-    }
-    nav ul li:active{
-        background: none;
-    }
+    /*--------------------------------*/
 
-
-
+    /*----------------------TICKETS----------*/
     .tickets__form{
         max-width: 400px;
-    }
-
-
-    .contact__form{
-        max-width: 600px;
-    }
-
-    .topPage{
-        background-image: url(images/rover.jpg);
-    }
-    .topPage-visit{
-        background-image: url(images/space-woman.jpg);
     }
     .topPage-tickets{
         background-image: url(images/lab-people.jpg);
     }
+    /*----------------------PRICES----------*/
     .topPage-prices{
         background-image: url(images/globus.jpg);
     }
+    /*----------------------ABOUT----------*/
     .topPage-about{
         background-image: url(images/reagent-tubes.jpg);
 
     }
+    /*----------------------CONTACT----------*/
     .topPage-contact{
         background-image: url(images/universe.jpg);
     }
-    
-    .hintbox-mobile{
-        display: none;
-    }
-    .hintBox{
-        display: block;
-        position: absolute;
-        left: 100px;
-        width: 1.25em;
-        text-align: center;
-        border: 1px solid black;
-        border-radius: 50px;
-        background: lightblue;
-    }
-    .hintBox__text{
-        display: block;
-        visibility: hidden;
-        width: 250px;
-        background-color: #555;
-        color: #fff;
-        text-align: center;
-        padding: 5px 0;
-        border-radius: 6px;
-        position: absolute;
-        z-index: 1;
-        bottom: 125%;
-        left: 50%;
-        margin-left: -60px;
-        opacity: 0;
-        transition: opacity 0.3s;
-    }
-    .hintBox:hover .hintBox__text{
-        visibility: visible;
-        opacity: 1;
+
+    .contact__form{
+        max-width: 600px;
     }
 
 
@@ -777,17 +778,5 @@ nav ul li:active{
         left: 130px;
     }
 }
-/*--------Navbar----------*/
 
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
-
-/*--------Navbar----------*/
 
