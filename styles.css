@@ -17,12 +17,13 @@ body, header, main, footer, ul{
     margin: 0px;
     padding: 0px;
 }
+
 h1{
     color: white;
     font-size: 2.5em;
 }
 h2{
-    color: #04C4D9;
+    color: #025E73;
     font-size: 1.7em;
     text-align: center;
 }
@@ -40,6 +41,12 @@ label{
     font-size: 0.8em;
 }
 
+body{
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+}
+h1, h2, h3{
+    font-family: "Playfair Display",Georgia,Times,"Times New Roman",serif;
+}
 /*--------HR----------*/
 .redHR{
     height: 5px;
@@ -108,7 +115,7 @@ nav ul li:hover{
     color: #FF5000;
 }
 nav ul li:active{
-    background: #025E73;
+    color: #84B1D9;
 }
 .hamburger__icon{
     font-size: 40px;
@@ -200,6 +207,10 @@ nav ul li:active{
     margin-right: 0px;
 }
 /*----------------------HOME PAGE----------*/
+/*--------Top Page----------*/
+.topPage-home h2{
+    color: #F28080;
+}
 /*--------Special Deal----------*/
 
 .specialDeal a{
@@ -238,13 +249,16 @@ nav ul li:active{
     position: relative;
     padding: 40px;
 }
-.category img{
-    height: 250px;
-    width: 300px;
+.category h2, .exhibition h2{
+    color: #025E73;
 }
 .category h2, .category a{
     flex: 100%;
     text-align: center;
+}
+.category img{
+    height: 250px;
+    width: 300px;
 }
 .redHR__category{
     position: absolute;
@@ -371,6 +385,7 @@ nav ul li:active{
     position: relative;
     align-items: flex-start;
     width: 80%;
+    min-height: 340px;
     margin: auto;
     padding: 10px 20px;
     border: 1px solid black;
@@ -387,19 +402,26 @@ nav ul li:active{
 .hintBox{
     display: none;
 }
+.hintbox-mobile{
+    position: relative;
+}
 .hintbox__label{
     position: absolute;
-    left: 100px;
-    top: 170px;
+    left: 80px;
+    top: -60px;
     border: 1px solid black;
     border-radius: 10px;
     padding: 2px 7px;
     background: lightblue;
     font-size: 15px;
 }
+#hintbox:checked ~ .hintbox__label{
+    background: #F28080;
+}
 #hintbox:checked ~ .hintbox__text::after {
     content: "1 Family ticket = 2 Children tickets and 2 Adults tickets";
 }
+
 .visually-hidden {
     position: absolute;
     left: 50px;
@@ -512,8 +534,6 @@ nav ul li:active{
 .about__img{
     width: 70%;
 }
-.history h2{
-}
 .history p{
     max-width: 80%;
 }
@@ -619,7 +639,9 @@ nav ul li:active{
         color: #FF5000;
     }
     nav ul li:active{
+        transition: none;
         background: none;
+        color: #84B1D9;
     }
     .hintbox-mobile{
         display: none;
